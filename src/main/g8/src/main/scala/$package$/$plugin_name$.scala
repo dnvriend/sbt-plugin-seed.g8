@@ -2,7 +2,6 @@ package $package$
 
 import sbt._
 import sbt.Keys._
-import sbt.KeyRanks._
 
 object $plugin_name$ extends AutoPlugin {
  override def trigger: PluginTrigger = allRequirements
@@ -38,8 +37,8 @@ object HelloWorld {
       s"""
          |Running task: helloWorld
          |========================
-         |thisIsTrue: \$_thisIsTrue
-         |helloWorldText: \$_helloWorldText 
+         |thisIsTrue: \${_thisIsTrue}
+         |helloWorldText: \${_helloWorldText}
       """.stripMargin)
 
 	   _helloWorldText
