@@ -3,9 +3,9 @@
 ######### Legend #############
 ## # starts a one-line comment
 ## > name sends a task to sbt (and tests if it succeeds)
-## $ name arg* performs a file command (and tests if it succeeds)
+## \$ name arg* performs a file command (and tests if it succeeds)
 ## -> name sends a task to sbt, but expects it to fail
-## -$ name arg* performs a file command, but expects it to fail
+## -\$ name arg* performs a file command, but expects it to fail
 
 # execute a task
 > plugins
